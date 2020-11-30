@@ -83,7 +83,6 @@ img{
 .section-footer{
     padding: 0 0 80px;
 }
-
 /* hero-img */
 .hero-img{
     width: 100%;
@@ -488,18 +487,115 @@ img{
 /* /menu */
 
 /* style */
-.section-style{
-    display: flex;
-    width: 1140px;
+.style-outer{
+    max-width: 1140px;
+    padding: 0 20px 60px;
     margin: auto;
 }
+.section-style{
+    display: flex;
+    align-items: center;
+}
+.section-style-rev{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
 .eyelush-style{
-    width: 40%;
+    width: 44%;
+}
+.style-list{
+    width: 56%;
+    padding: 0px 40px;
 }
 .eyelash-image-en{
-    font-size: 5.6rem;
+    font-size: 4.6rem;
     letter-spacing: 0.2em;
 }
+.eyelash-image-ja{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.style-info{
+    padding: 10px 0px 10px 20px;
+    border-left: solid medium #000;
+    border-width: 1px;
+}
+.style-point{
+    font-family: Monotype Corsiva;
+    font-size: 4rem;
+    letter-spacing: 0.2em;
+    margin: 20px 0 10px;
+}
+.style-point-detail{
+    font-size: 1.8rem;
+}
+.style-plan.bold{
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+/* /style */
+
+/* flow */
+.section-flow{
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+.section-flow-outer{
+    max-width: 700px;/* maxを取り払うと、画像伸縮のような挙動をとる */
+    margin: auto;
+    /* position: relative; */
+}
+.flow-step{
+    position: absolute;
+    left: -25px;
+    font-size: 4.5rem;
+    letter-spacing: 0.15em;
+    padding: 14px 30px;
+    font-family:'Monotype Corsiva';
+    color: #fff;
+    background-color: #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.flow-category{
+    font-size: 5.6rem;
+    letter-spacing: 0.14em;
+}
+.flow-category-detail{
+    font-size: 1.4rem;
+    letter-spacing: 0.13em;
+    margin-bottom: 30px;
+}
+.section-flow-inner{
+    padding-left: 30px;
+    border-left: solid medium #000;
+    border-width: 1px;
+}
+.flow-item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+}
+.flow-title{
+    width: 280px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.flow-detail{
+    width: 400px;
+    font-size: 1.8rem;
+}
+    /* width: 50%; */
+}
+
+/* /flow */
 
 @media screen and (min-width:940px){
     .br-set{
@@ -594,7 +690,7 @@ img{
     .style-plan{
         font-size: 2.4rem;
     }
-    .style-detail{
+    .style-detail.homess{
         font-size: 1.8rem;
     }
 
