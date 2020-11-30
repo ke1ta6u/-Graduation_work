@@ -1,62 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YaRi's Design</title>
+
+    <meta name="description" content="YaRi's Designは、最先端の施術でお客様が美しくなる手伝いをする、まつげエクステンション専門サロンです。">
+    <meta property="og:title" content="YaRi's Design ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="img/logo_touch.png">
+    <meta property="og:site_name" content="YaRi's Design">
+    <meta property="og:description" content="YaRi's Designは、最先端の施術でお客様が美しくなる手伝いをする、まつげエクステンション専門サロンです。">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" href="img/logo_touch.png">
+    <link rel="shortcut icon" href="img/logo_favi.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" >
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- hero -->
-        <img src="img/kv_women_pc.png" alt="最先端の施術で目元から美しく">
+        <img src="img/kv_women_pc.png" alt="最先端の施術で目元から美しく" class="hero-img hero-none">
+        <img src="img/kv_women_sp.png" alt="" class="hero-img hero-set">
     <!-- /hero -->
 
     <!-- header -->
-    <header>
-        <h1><a href="index.html"><img src="img/logo.png" alt="YaRi's_Designのロゴ"></a></h1>
-        <a href="">
-            <span>HOME</span>
-            <span>ホーム</span>
-        </a>
-        <a href="">
-            <span>MENU</span>
-            <span>メニュー</span>
-        </a>
-        <a href="">
-            <span>FLOW</span>
-            <span>施術の流れ</span>
-        </a>
-        <a href="">
-            <span>FAQ</span>
-            <span>よくあるご質問</span>
-        </a>
-        <a href="">
-            <span>WEB予約</span>
-        </a>
+    <header class="header">
+        <div class="header-inner text-center section-width">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="YaRi's_Designのロゴ"></a></h1>
+            <button class="btn-trigger"><!--ハンバーガーメニューを囲うためのタブ（何かで囲わないとならないから）-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item nav-item__link">
+                        <a href="/index.html" class="nav-color">
+                            <span class="nav-eng">HOME</span>
+                            <span class="nav-ja">ホーム</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item__link">
+                        <a href="/menu/MENU 1920– 1.png" class="nav-color">
+                            <span class="nav-eng">MENU</span>
+                            <span class="nav-ja">メニュー</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item__link">
+                        <a href="/flow/FLOW 1920 – 1.png" class="nav-color">
+                            <span class="nav-eng">FLOW</span>
+                            <span class="nav-ja">施術の流れ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item__link">
+                        <a href="/faq/FAQ 1920 – 3.png" class="nav-color">
+                            <span class="nav-eng">FAQ</span>
+                            <span class="nav-ja">よくあるご質問</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list l-horizon">
+                    <li class="nav-item nav-item__sns"><a href=""><span class="fa fa-facebook-official fa-2x sns"></span></a></li>
+                    <li class="nav-item nav-item__sns"><a href=""><span class="fa fa-instagram fa-2x sns"></span></a></li>
+                </ul>
+            </nav>
+                <a href="" class="nav-color-bk">
+                    <span class="nav-eng">WEB予約</span>
+                </a>
+
+        </div>
     </header>
     <!-- /header -->
 
     <!-- section salon -->
     <section class="bg-gray">
+        <!-- section head -->
+        <div class="section-header text-center">
+            <h2 class="section-title">salon</h2>
+            <p class="section-subtitle">サロン情報</p>
+        </div>
+        <!-- /section head -->
+        <!-- section main -->
         <div class="section-width">
-            <!-- section head -->
-            <div class="section-header text-center">
-                <h2 class="section-title">salon</h2>
-                <p class="section-subtitle">サロン情報</p>
-            </div>
-            <!-- /section head -->
-            <!-- section main -->
             <div class="section-main bg-white">
                 <div class="main-item">
                     <div class="main-header">
-                        <h3 class="main-title">relax<br>time</h3>
+                        <h3 class="main-title">relax<br class="display-none">time</h3>
                         <p class="main-subtitle">リラックスタイム</p>
                     </div>
                     <p class="main-apeal">少し”贅沢な時間”を</p>
-                    <hr class="line">
+                    <hr class="line display-none">
                     <div>
-                        <p class="main-text">ハワイを感じさせるリゾート空間と 心地よいBGMで、いつもより少し贅沢なビューティータイムをお過ごしください。</p>
+                        <p class="main-text">ハワイを感じさせるリゾート空間と心地よいBGMで、<br class="br-set">いつもより少し贅沢なビューティータイムをお過ごしください。</p>
                     </div>
                 </div>
                 <div class="main-item-img">
@@ -68,59 +106,64 @@
                     </ul>
                 </div>
             </div>
-            <!-- /section main -->
         </div>
-            <div class="section-width">
-                <!-- section head -->
-                <div class="section-access bg-white">
-                    <div class="access-item">
-                        <div class="main-header">
-                            <h3 class="main-title">access</h3>
-                            <p class="main-subtitle">アクセス</p>
-                        </div>
-                        <hr class="line__access">
-                        <ul class=access-info>
-                            <li class="access-info__detail">
-                                〒231-0014<br>
-                                神奈川県横浜市中区常盤町5丁目72-1 GM横浜馬車道4F
-                            </li>
-                            <li class="access-info__detail">
-                                平日(火〜金) 10:00〜20:00<br>
-                                土日祝 10:00〜18:00<br>
-                                毎週月曜定休日
-                            </li>
-                            <li class="access-info__detail">
-                                ※月曜日が祝日の場合は火曜日が振替でお休みとなります。
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.301842951832!2d139.63216161560769!3d35.447321050371464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cf5cdf938fd%3A0xad5d1af15c48a27a!2z44CSMjMxLTAwMTQg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy65bi455uk55S677yV5LiB55uu77yX77yS4oiS77yRIEdt5qiq5rWc6aas6LuK6YGT44OT44OrIDRG!5e0!3m2!1sja!2sjp!4v1606385277168!5m2!1sja!2sjp" width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"  class="img-radius__left"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="section-width">
-                <div class="main-payment text-center bg-white">
+        <!-- /section main -->
+        <div class="section-width">
+            <!-- section head -->
+            <div class="section-access bg-white">
+                <div class="access-item">
                     <div class="main-header">
-                        <h3 class="main-title">e-payment</h3>
-                        <p class="main-subtitle">各種キャッシュレスのお支払いに対応しています。</p>
+                        <h3 class="main-title">access</h3>
+                        <p class="main-subtitle">アクセス</p>
                     </div>
-                    <img src="img/payment_pc.png" alt="" class="payment__img">
+                    <hr class="line__access display-none">
+                    <ul class=access-info>
+                        <li class="access-info__detail">
+                            〒231-0014<br>
+                            神奈川県横浜市中区常盤町5丁目72-1<br class="display-none">GM横浜馬車道4F
+                        </li>
+                        <li class="access-info__detail">
+                            平日(火〜金) 10:00〜20:00<br>
+                            土日祝 10:00〜18:00<br>
+                            毎週月曜定休日
+                        </li>
+                        <li class="access-info__detail">
+                            ※月曜日が祝日の場合は火曜日が振替でお休みとなります。
+                        </li>
+                    </ul>
+                </div>
+                <div class="maps-left">
+                    <div class="maps-outer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.301842951832!2d139.63216161560769!3d35.447321050371464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cf5cdf938fd%3A0xad5d1af15c48a27a!2z44CSMjMxLTAwMTQg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy65bi455uk55S677yV5LiB55uu77yX77yS4oiS77yRIEdt5qiq5rWc6aas6LuK6YGT44OT44OrIDRG!5e0!3m2!1sja!2sjp!4v1606385277168!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"  class="maps-inner img-radius__left"></iframe>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="section-width">
+            <div class="main-payment text-center bg-white">
+                <div class="main-header e-payment">
+                    <h3 class="main-title">e-payment</h3>
+                    <p class="main-subtitle">各種キャッシュレスのお支払いに対応しています。</p>
+                </div>
+                <img src="img/payment_pc.png" alt="" class="payment__img hero-none">
+                <img src="img/payment_sp.png" alt="" class="hero-set">
+            </div>
+        </div>
     </section>
  
 
     <!-- profile -->
     <section class="bg-cream">
-        <div>
+        <div class="section-width">
             <div class="section-header text-center">
                 <h2 class="section-title">profile</h2>
                 <p class="section-subtitle">自己紹介</p>
             </div>
-            <div class="section-width">
-                <div class="section-main bg-white">
-                    <img src="img/rika.png" alt="" class="profile-img">
+            <div class="profile">
+                <div class="section-main profile bg-white">
+                        <img src="img/rika.png" alt="" class="profile-img display-none">
+                        <img src="img/rika_sp.png" alt="" class="profile-img br-set pro">
+                    
                     <div class="info-list">
                         <div class="profile-name">
                             <p class="profile-name_eng"> <span class="letter-uppercase">r</span>ika <span class="letter-uppercase">y</span>amamoto</p>
@@ -156,23 +199,24 @@
     <!-- /profile -->
 
     <!-- style -->
-    <section>
+    <section class="bg-gray">
         <div class="section-header text-center">
             <h2 class="section-title">style</h2>
             <p class="section-subtitle">スタイル</p>
         </div>
-        <p class="text-center style-info">しっかりカウンセリングをさせていただき、お客様に合わせたデザインを提案させていただきます。<br>一本一本丁寧に施術いたしますので、お気軽にご来店ください。</p>
+        <p class="text-center style-info">しっかりカウンセリングをさせていただき、<br class="hero-set">お客様に合わせたデザインを提案させていただきます。<br>一本一本丁寧に施術いたしますので、お気軽にご来店ください。</p>
         <div class="wrapper">
             <ul class="style-float">
                 <li class="style-img">
                     <div>
                         <img src="img/eye4-1.png" alt="">
                     </div>
-                    <div>
-                        <p>カラーエクステ60分つけ放題</p>
+                    <div class="style-box bg-white">
+                        <hr class="line__style">
+                        <p class="style-plan">カラーエクステ60分つけ放題</p>
                         <ul>
-                            <li>Cカール9~12mm</li>
-                            <li>クール フェミニン</li>
+                            <li class="style-detail">Cカール9~12mm</li>
+                            <li class="style-detail">クール フェミニン</li>
                         </ul>
                     </div>
                 </li>
@@ -180,11 +224,12 @@
                     <div>
                         <img src="img/eye2-1.png" alt="">
                     </div>
-                    <div>
-                        <p>カラーエクステ60分つけ放題</p>
+                    <div class="style-box bg-white">
+                        <hr class="line__style">
+                        <p class="style-plan">カラーエクステ60分つけ放題</p>
                         <ul>
-                            <li>Cカール8~10mm</li>
-                            <li>ナチュラル フェミニン</li>
+                            <li class="style-detail">Cカール8~10mm</li>
+                            <li class="style-detail">ナチュラル フェミニン</li>
                         </ul>
                     </div>
                 </li>
@@ -192,20 +237,64 @@
                     <div>
                         <img src="img/eye3-1.png" alt="">
                     </div>
-                    <div>
-                        <p>セーブル60分つけ放題</p>
+                    <div class="style-box bg-white">
+                        <hr class="line__style">
+                        <p class="style-plan">セーブル60分つけ放題</p>
                         <ul>
-                            <li>C,Dカール10~12mm</li>
-                            <li>エレガント</li>
+                            <li class="style-detail">C,Dカール10~12mm</li>
+                            <li class="style-detail">エレガント</li>
                         </ul>  
                     </div>
                 </li>
             </ul>
-        </div>
-        <div>
-            <a href=""><span>menu</span></a>
+            <div class="section-footer">
+                <a href="" class="btn text-center">menu</a>
+            </div>
         </div>
     </section>
     <!-- /style -->
+    <!--footer-->
+   <footer class="footer text-center">
+    <div class="text-center">
+        <h1 class="logo logo-center"><a href="index.html"><img src="img/logo.png" alt="YaRi's_Designのロゴ"></a></h1>
+        <div class="footer-nav">
+            <ul class="nav-list l-vertical">
+                <li class="nav-item nav-item__link">
+                    <a href="" class="nav-color">
+                        <span class="nav-eng">HOME</span>
+                        <span class="nav-ja">ホーム</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item__link">
+                    <a href="" class="nav-color">
+                        <span class="nav-eng">MENU</span>
+                        <span class="nav-ja">メニュー</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item__link">
+                    <a href="" class="nav-color">
+                        <span class="nav-eng">FLOW</span>
+                        <span class="nav-ja">施術の流れ</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item__link">
+                    <a href="" class="nav-color">
+                        <span class="nav-eng">FAQ</span>
+                        <span class="nav-ja">よくあるご質問</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-list l-vertical">
+                <li class="nav-item nav-item__sns"><a class="nav-color" href=""><span class="fa fa-facebook-official fa-2x sns"></span></a></li>
+                <li class="nav-item nav-item__sns"><a class="nav-color" href=""><span class="fa fa-instagram fa-2x sns"></span></a></li>
+            </ul>
+        </div>
+
+    </div>
+<!-- /header -->
+	<small class="copyrights">&copy;copyright Yari's Design. All rights reserved.</small>
+</footer>
+<!--/footer-->
+
 </body>
 </html>
